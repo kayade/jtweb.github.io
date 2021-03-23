@@ -1,0 +1,42 @@
+
+.tol {
+  --clr: 51, 51, 51;
+  --background: rgba(var(--clr), 1);
+
+  --clr2: 240, 47, 34;
+  --color: rgba(var(--clr2), .9);
+
+  --padding-start: 1vw;
+}
+
+
+.con {
+  --clr: 51, 51, 51;
+  --background: rgba(var(--clr), 1);
+
+  --clr2: 247, 238, 240;
+  --color: rgba(var(--clr2), .9);
+}
+
+.itm{
+  --border-width: 0;
+  --inner-border-width: 0;
+  border-color: transparent;
+
+  --clr: 51, 51, 51;
+  --background: rgba(var(--clr), 1);
+
+  --clr2: 247, 238, 240;
+  --color: rgba(var(--clr2), .9);
+}
+
+.lst{
+  --clr: 51, 51, 51;
+  background: rgba(var(--clr), 1);
+}
+
+.icn{
+
+  --clr2: 247, 238, 240;
+  color: rgba(var(--clr2), .9);
+}
