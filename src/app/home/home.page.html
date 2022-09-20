@@ -1,19 +1,48 @@
 <ion-header>
   <ion-toolbar class="tb">
-    <ion-buttons slot="start">
+    <ion-buttons class="mb" slot="start" [hidden]="devWidth > 576">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Jade Technology</ion-title>
+    <div slot="start" class="ttl">
+      <ion-img [src]="bg" class="tmb"></ion-img>
+    </div>
+    <div class="dv1" slot="start">
+      <ion-button class="nbut" fill="clear" routerLink="/home" routerDirection="root"
+                  routerLinkActive="active-link">
+        Home
+      </ion-button>
+      <ion-button class="nbut" fill="clear" routerLink="/home" routerDirection="root"
+                  routerLinkActive="active-link">
+        About Us
+      </ion-button>
+      <ion-button class="nbut" fill="clear" routerLink="/home" routerDirection="root"
+                  routerLinkActive="active-link">
+        Our Services
+      </ion-button>
+      <ion-button class="nbut" fill="clear" routerLink="/home" routerDirection="root"
+                  routerLinkActive="active-link">
+        Our Products
+      </ion-button>
+      <ion-button class="nbut" fill="clear" routerLink="/home" routerDirection="root"
+                  routerLinkActive="active-link">
+        Contact Us
+      </ion-button>
+    </div>
+    <div class="dv2" slot="end">
+      <ion-button class="soc" fill="clear">
+        <ion-icon class="icn" slot="icon-only" name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button class="soc" fill="clear">
+        <ion-icon class="icn" slot="icon-only" name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button class="soc" fill="clear">
+        <ion-icon class="icn" slot="icon-only" name="logo-instagram"></ion-icon>
+      </ion-button>
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content padding class="cnt" [fullscreen]="true">
   <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI
